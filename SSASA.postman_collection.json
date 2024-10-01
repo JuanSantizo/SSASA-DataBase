@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "15091e32-84c6-4308-9f22-b3629b3f6095",
+		"name": "SSASA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "10682993",
+		"_collection_link": "https://lively-comet-160268.postman.co/workspace/Evaluaciones~bdb2af4e-e818-4c4f-86c0-bcf93097b7f4/collection/10682993-15091e32-84c6-4308-9f22-b3629b3f6095?action=share&source=collection_link&creator=10682993"
+	},
+	"item": [
+		{
+			"name": "Sexo Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7150/api/sexo"
+			},
+			"response": []
+		},
+		{
+			"name": "Departamento Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7150/api/Departamento"
+			},
+			"response": []
+		},
+		{
+			"name": "Departamento Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Post1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7150/api/Departamento/Insertar"
+			},
+			"response": []
+		},
+		{
+			"name": "Departamento Actualizar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartamentoId\":1,\r\n    \"Nombre\":\"Cambio1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7150/api/Departamento/Actualizar"
+			},
+			"response": []
+		},
+		{
+			"name": "Departamento Desactivar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartamentoId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7150/api/Departamento/Desactivar"
+			},
+			"response": []
+		},
+		{
+			"name": "Departamento Seleccionar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7150/api/Departamento/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Departamento Empleados Desactivar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartamentoId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7150/api/Departamento/DesactivarEmpleados"
+			},
+			"response": []
+		},
+		{
+			"name": "Empleado Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DPI\":\"DPI12345\",\r\n    \"Nombres\":\"N1\",\r\n    \"Apellidos\":\"Ap\",\r\n    \"FechaNacimiento\":\"2001-05-06\",\r\n    \"SexoId\":\"1\",\r\n    \"Fecha_Ingreso\":\"2020-06-07\",\r\n    \"Edad\":\"15\",\r\n    \"Direccion\":\"Direccion1\",\r\n    \"NIT\":\"NIT123\",\r\n    \"DepartamentoId\":\"253\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7150/api/Empleado/Insertar"
+			},
+			"response": []
+		},
+		{
+			"name": "Empleado Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7150/api/Empleado"
+			},
+			"response": []
+		},
+		{
+			"name": "Empleado Seleccionar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7150/api/Empleado/DPI1234"
+			},
+			"response": []
+		},
+		{
+			"name": "Empleado Actualizar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DPI\":\"DPI1234\",\r\n    \"Nombres\":\"Modificado 1\",\r\n    \"Apellidos\":\"Ap\",\r\n    \"FechaNacimiento\":\"2001-05-06\",\r\n    \"SexoId\":\"1\",\r\n    \"Fecha_Ingreso\":\"2020-06-07\",\r\n    \"Edad\":\"15\",\r\n    \"Direccion\":\"Direccion1\",\r\n    \"NIT\":\"NIT123\",\r\n    \"DepartamentoId\":\"5\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7150/api/Empleado/Actualizar"
+			},
+			"response": []
+		},
+		{
+			"name": "Empleado Desactivar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DPI\":\"DPI1234\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7150/api/Empleado/Desactivar"
+			},
+			"response": []
+		}
+	]
+}
